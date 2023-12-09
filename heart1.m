@@ -1,9 +1,9 @@
-n = 100;
+n = 150;
 
 % Define the variables
-S = ceil(0.7*201);  % total number of samples
-B = ceil(0.7*98);   % number of benign samples
-M = ceil(0.7*103);   % number of malignant samples
+S = ceil(0.7*1025);  % total number of samples
+B = ceil(0.7*499);   % number of benign samples
+M = ceil(0.7*526);   % number of malignant samples
 
 % Calculate c1 and c2
 c1 = M / S;
@@ -30,5 +30,6 @@ result = score * coeff(ind,:)' + mu(ind)
 % Check the size of the result
 size(result)
 
-%Convert to csv
-csvwrite('7030heart1-201-101.csv', result);
+
+%convert to csv
+csvwrite('7030heart1-151.csv', result);
